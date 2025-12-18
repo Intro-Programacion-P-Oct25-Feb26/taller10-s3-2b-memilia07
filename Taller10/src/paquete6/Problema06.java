@@ -27,24 +27,24 @@ public class Problema06 {
         numero = entrada.nextDouble();
 
         System.out.println("\nIngrese los valores de la matriz (5x6):");
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
-                System.out.printf("Valor [%d][%d]: ", i, j);
-                matrizOriginal[i][j] = entrada.nextDouble();
+        for (int fila = 0; fila < 5; fila++) {
+            for (int col = 0; col < 6; col++) {
+                System.out.printf("Valor [%d][%d]: ", fila, col);
+                matrizOriginal[fila][col] = entrada.nextDouble();
             }
         }
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
-                matrizResultante[i][j] = matrizOriginal[i][j] * numero;
+        for (int fila = 0; fila < 5; fila++) {
+            for (int col = 0; col < 6; col++) {
+                matrizResultante[fila][col] = matrizOriginal[fila][col] * numero;
             }
         }
 
         reporte = String.format("%s\nMatriz Original:\n", reporte);
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
+        for (int fila = 0; fila < 5; fila++) {
+            for (int col = 0; col < 6; col++) {
                 reporte = String.format("%s%.2f ", reporte, 
-                        matrizOriginal[i][j]);
+                        matrizOriginal[fila][col]);
             }
             reporte = String.format("%s\n", reporte);
         }
@@ -53,10 +53,10 @@ public class Problema06 {
                 + "por %.2f):\n",
                 reporte, numero);
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
+        for (int fila = 0; fila < 5; fila++) {
+            for (int col = 0; col < 6; col++) {
                 reporte = String.format("%s%.2f ", reporte, 
-                        matrizResultante[i][j]);
+                        matrizResultante[fila][col]);
             }
             reporte = String.format("%s\n", reporte);
         }
