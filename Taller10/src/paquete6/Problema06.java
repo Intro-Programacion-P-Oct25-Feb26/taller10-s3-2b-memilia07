@@ -60,6 +60,7 @@ public class Problema06 {
             }
             reporte = String.format("%s\n", reporte);
         }
+        
 
         System.out.println(reporte);
     }
