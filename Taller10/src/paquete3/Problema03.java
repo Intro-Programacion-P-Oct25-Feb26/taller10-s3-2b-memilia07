@@ -32,7 +32,9 @@ public class Problema03 {
             zonas[fila] = contador;
         }
         for (int fila = 0; fila < sensores.length; fila++) {
+            
             int fallos = sensores[fila].length - zonas[fila];
+            
             System.out.printf("Zona %d\nZonas que funcionan sin fallos: %d\n"
                     + "Zonas que presentan fallos: %d\n",
                      (fila + 1), zonas[fila], fallos);
