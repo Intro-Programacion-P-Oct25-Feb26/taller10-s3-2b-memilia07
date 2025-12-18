@@ -26,6 +26,7 @@ public class Problema08 {
         double[][] dato2 = {{10, 1, 2}, {10, 9, 1}};
         String reporte = "";
 
+        
         for (int fila = 0; fila < dato1.length; fila++) {
             for (int col = 0; col < dato1[fila].length; col++) {
                 if (col <= fila) {
