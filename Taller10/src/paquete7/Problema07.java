@@ -83,9 +83,9 @@ public class Problema07 {
 
             reporte = String.format("%s\n", reporte);
         }
-        for (int i = 0; i < A.length; i++) { 
-            for (int j = 0; j < A[i].length; j++) {
-                if(A[i][j] == B[i][j]){
+        for (int fila = 0; fila < A.length; fila++) { 
+            for (int col = 0; col < A[fila].length; col++) {
+                if(A[fila][col] == B[fila][col]){
                     igual = igual + 1;
                 }
                     
